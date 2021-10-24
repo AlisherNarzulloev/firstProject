@@ -143,28 +143,16 @@ body {
   height: 100%;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
 }
-div.wrapper {
-  margin: auto;
-  width: 1194px;
-  height: 380px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  position: absolute;
-  align-items: center;
-}
-.promo1 {
-  float: left;
+.promo {
   padding-bottom: 50px;
-  width: 570px;
-  min-height: 380px;
-}
-.promo2 {
-  float: right;
-  padding-bottom: 50px; 
-  width: 570px;
-  min-height: 380px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: -20px;
 }
 .card {
+  flex: 50%;
+  margin: 20px;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
