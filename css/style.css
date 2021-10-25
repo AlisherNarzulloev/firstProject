@@ -96,6 +96,22 @@ body {
   position: relative;
   max-width: 400px;
 }
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.slider-button {
+  cursor: pointer;
+}
+.swiper {
+  position: relative;
+}
 .slide-title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -129,6 +145,16 @@ body {
 }
 .slide-summer {
   background-image: url('../img/summer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-vitamins{
+  background-image: url('../img/vitamins.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-auttum{
+  background-image: url('../img/auttum.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -399,6 +425,8 @@ body {
   padding-bottom: 202px;
 }
 .profit-card {
+  margin-right: 30px;
+  margin-bottom: 30px;
   align-items: center;
   flex: 50%;
   position: relative;
@@ -419,6 +447,7 @@ body {
   height: 60px;
   left: 105px;
   top: 30px;
+  display: flex;
   position: relative;
   margin-bottom: 34px;
 }
@@ -466,4 +495,77 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+    min-width: calc(50% - 30px);
+  }
+  .profit-content {
+    flex-wrap: wrap;
+  }
+  .profit-card {
+    flex: 50%;
+    min-width: calc(40% + 60px);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 70px;
+  }
+  .delivery-card {
+    width: calc(50% - 30px);
+  }
+  .footer-logo {
+    margin-right: 40px;
+  }
+  .profit-content {
+    flex-wrap: wrap;
+  }
+  .profit-card {
+    flex: 50%;
+    min-width: calc(40% + 30px);
+  }
+}
+@media (max-width: 770px) {
+  .container {
+    min-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 5;
+  }
+  .slide {
+    margin-left: 30px;
+  }
+  .promo {
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+  .delivery-cards {
+    margin-left: 10px; 
+  }
+  .profit-content {
+    flex-wrap: wrap;
+  }
+  .profit-card {
+    flex: 50%;
+    min-width: 70%;
+    margin-left: 90px;
+  }
 }
